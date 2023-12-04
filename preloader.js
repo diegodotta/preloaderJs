@@ -49,7 +49,8 @@ document.body.appendChild(overlay);
 document.body.appendChild(svgImage);
 document.body.appendChild(bodyScroll);
 
-document.getElementsByTagName('body')[0].style = 'overflow: auto !important; margin: 20px !important; background: blue !important';
+document.getElementsByTagName('body')[0].style = 'overflow: auto !important; margin: 20px !important; background: blue !important; position: relative !important;';
+document.getElementsByTagName('flutter-view')[0].style = 'position: fixed !important';
 
 // Function to hide the overlay and display the SVG
 function hideOverlay() {
