@@ -54,6 +54,7 @@ document.body.appendChild(svgImage);
 function hideOverlay() {
     overlay.style.display = 'none';
     svgImage.style.display = 'block';
+    window.scrollTo(0,100);
 }
 
 // Add an event listener to hide the overlay when all external JS files are loaded
