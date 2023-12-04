@@ -17,8 +17,8 @@ overlay.style.cssText = `
 const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
 svgImage.src = 'https://diegodotta.github.io/preloaderJs/loading_bike2.gif';
-svgImage.width = '100px'
-svgImage.height = '100px'
+svgImage.width = '100'
+svgImage.height = '100'
 svgImage.style.cssText = `
     width: 100px;
     height: 100px;
