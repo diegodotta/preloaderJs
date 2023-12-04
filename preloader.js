@@ -38,8 +38,8 @@ bodyScroll.style.cssText = `
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 5000px;
+    width: 2px;
+    height: 50000px;
     background-color: red;
     z-index: 9999999;
 `;
