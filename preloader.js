@@ -44,15 +44,24 @@ bodyScroll.style.cssText = `
     z-index: 9999999;
 `;
 
+bodyScroll.onclick = function(){
+    console.log("currentScroll: "+window.pageYOffset)
+    window.scrollTo(0,100)
+    console.log("netScroll: "+window.pageYOffset)
+};
+
 // Append the elements to the body
 document.body.appendChild(overlay);
 document.body.appendChild(svgImage);
 document.body.appendChild(bodyScroll);
 
-document.body.style.setProperty('overflow', 'auto');
-document.body.style.setProperty('background', 'red');
-document.body.style.setProperty('margin', '20px');
 
+function getBodyScroll(){
+    var node = document.getElementById('bodyScroll');
+    node.innerHTML = ''+window.pageYOffset;
+}
+
+setInterval(getBodyScroll, 1000);
 //document.getElementsByTagName('body')[0].style = 'overflow: auto !important; margin: 20px !important; background: blue !important; position: relative !important;';
 //document.getElementsByTagName('flutter-view').style = 'position: fixed !important';
 
