@@ -48,7 +48,7 @@ bodyScroll.style.cssText = `
 // Append the elements to the body
 document.body.appendChild(overlay);
 document.body.appendChild(svgImage);
-document.body.appendChild(bodyScroll);
+//document.body.appendChild(bodyScroll);
 
 // Function to hide the overlay and display the SVG
 function hideOverlay() {
