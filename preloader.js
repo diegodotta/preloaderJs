@@ -17,6 +17,8 @@ overlay.style.cssText = `
 const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
 svgImage.src = 'https://diegodotta.github.io/preloaderJs/loading_bike2.gif';
+svgImage.width = '100px'
+svgImage.height = '100px'
 svgImage.style.cssText = `
     width: 100px;
     height: 100px;
@@ -28,9 +30,26 @@ svgImage.style.cssText = `
 `;
 svgImage.style.display = 'none';
 
+
+const bodyScroll = document.createElement('div');
+bodyScroll.id = 'bodyScroll';
+bodyScroll.style.cssText = `
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5000px;
+    background-color: red;
+    z-index: 9999999;
+`;
+
 // Append the elements to the body
 document.body.appendChild(overlay);
 document.body.appendChild(svgImage);
+document.body.appendChild(bodyScroll);
+
+document.getElementsByTagName('body')[0].style = 'overflow: auto !important; margin: 20px !important; background: blue !important';
 
 // Function to hide the overlay and display the SVG
 function hideOverlay() {
