@@ -40,8 +40,9 @@ bodyScroll.style.cssText = `
     left: 0;
     width: 50px;
     height: 50000px;
-    background-color: red;
+    background-color: white;
     z-index: 9999999;
+    opacity: 0.1;
 `;
 
 bodyScroll.onclick = function(){
