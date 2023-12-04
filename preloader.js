@@ -18,8 +18,8 @@ const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
 svgImage.src = 'https://diegodotta.github.io/preloaderJs/loading_bike2.gif';
 svgImage.style.cssText = `
-    max-width: 100px;
-    max-height: 100px;
+    width: 100px;
+    height: 100px;
     display: none;
     position: absolute;
     top: 50%;
