@@ -45,26 +45,10 @@ bodyScroll.style.cssText = `
     opacity: 0.1;
 `;
 
-bodyScroll.onclick = function(){
-    console.log("currentScroll: "+window.pageYOffset)
-    window.scrollTo(0,100)
-    console.log("netScroll: "+window.pageYOffset)
-};
-
 // Append the elements to the body
 document.body.appendChild(overlay);
 document.body.appendChild(svgImage);
 document.body.appendChild(bodyScroll);
-
-
-function getBodyScroll(){
-    var node = document.getElementById('bodyScroll');
-    node.innerHTML = ''+window.pageYOffset;
-}
-
-setInterval(getBodyScroll, 1000);
-//document.getElementsByTagName('body')[0].style = 'overflow: auto !important; margin: 20px !important; background: blue !important; position: relative !important;';
-//document.getElementsByTagName('flutter-view').style = 'position: fixed !important';
 
 // Function to hide the overlay and display the SVG
 function hideOverlay() {
